@@ -16303,8 +16303,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Detail.cshtml",
+      "TargetPath": "Views\\Pet\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/List.cshtml",
+      "TargetPath": "Views\\Pet\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Edit.cshtml",
+      "TargetPath": "Views\\Pet\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16330,6 +16345,11 @@
     {
       "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Add.cshtml",
+      "TargetPath": "Views\\Pet\\Add.cshtml",
       "FileKind": "mvc"
     }
   ],

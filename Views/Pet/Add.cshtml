@@ -1,0 +1,32 @@
+@model midterm_project.Models.Pet
+
+@{
+    ViewData["Title"] = "Add New Dog";
+}
+
+<div>
+    <form asp-controller="Pet" asp-action="Add" method="post">
+        <h1>Add New Adoptable Dog</h1>
+        <label class="control-label" asp-for="PetName"></label>
+        <input class="form-control" asp-for="PetName" />
+<br>
+        <label class="control-label" asp-for="PetImgUrl"></label>
+        <input class="form-control" asp-for="PetImgUrl" />
+<br>
+        <label class="control-label" asp-for="PetDescription"></label>
+        <input class="form-control" asp-for="PetDescription" />
+<br>
+        <label class="control-label" asp-for="PetBreed"></label>
+        <input class="form-control" asp-for="PetBreed" />
+<br>
+        <label class="control-label" asp-for="PetAge"></label>
+        <input class="form-control" asp-for="PetAge" />
+<br>
+        <label class="control-label" asp-for="PetGender"></label>
+        <select asp-for="PetGender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
+        <option>Select Gender</option>
+        </select>
+<br>
+        <input type="submit" value="Save">
+    </form>
+</div>

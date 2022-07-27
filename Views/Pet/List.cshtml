@@ -1,0 +1,17 @@
+@model IEnumerable<midterm_project.Models.Pet>
+
+@{
+    ViewData["Title"] = "Adoptable Pets";
+}
+
+<div>
+    <h1>Kendall & Koda's Dog Adoptions!</h1>
+    <br>
+    <div>
+        @foreach (var pet in Model ?? new List<Pet>())
+        {
+            <p>@pet.PetName</p>
+            <a href="@pet.PetImgUrl"></a>
+        }
+    </div>
+</div>
