@@ -1,0 +1,20 @@
+@model midterm_project.Models.Pet
+
+@{
+    ViewData["Title"] = "Edit Pet Details";
+}
+
+<div>
+    <form asp-controller="Pet" asp-action="Edit" method="post">
+        <h1>Edit Pet Details</h1>
+        
+        @await Html.PartialAsync("_PetInput", Model)
+
+        <input type="hidden" asp-for="PetId"/>
+
+        <div>
+            <input type="submit" class="btn" value="Save">
+        </div>
+
+    </form>
+</div>

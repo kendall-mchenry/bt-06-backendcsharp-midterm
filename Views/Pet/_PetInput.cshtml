@@ -1,0 +1,42 @@
+@model midterm_project.Models.Pet
+
+<div class="form-group">
+    <div>
+        <label class="control-label" asp-for="PetName"></label>
+        <input class="form-control" asp-for="PetName" />
+        <span asp-validation-for="PetName"></span>
+    </div>
+
+    <div>
+        <label class="control-label" asp-for="PetImgUrl"></label>
+        <input class="form-control" asp-for="PetImgUrl" />
+        <span asp-validation-for="PetImgUrl"></span>
+    </div>
+   
+    <div>
+        <label class="control-label" asp-for="PetDescription"></label>  
+        <input class="form-control" asp-for="PetDescription" />
+        <span asp-validation-for="PetDescription"></span>
+    </div>
+    
+    <div>
+        <label class="control-label" asp-for="PetBreed"></label>
+        <input class="form-control" asp-for="PetBreed" />
+        <span asp-validation-for="PetBreed"></span>
+    </div>
+
+    <div>
+        <label class="control-label" asp-for="PetAge"></label>
+        <input class="form-control" asp-for="PetAge" />
+        <span asp-validation-for="PetAge"></span>
+    </div>
+
+    <div>
+        <label class="control-label" asp-for="PetGender"></label>
+        <select asp-for="PetGender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
+            <option>Select Gender</option>
+        </select>
+        <span asp-validation-for="PetGender"></span>
+    </div>
+
+</div>

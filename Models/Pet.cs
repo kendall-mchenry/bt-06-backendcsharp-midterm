@@ -30,7 +30,7 @@ public class Pet {
 
     [Required, Range(0, 30)]
     [Display(Name = "Pet Age")]
-    public int PetAge { get; set; }
+    public float PetAge { get; set; }
 
     [Required]
     [Display(Name = "Pet Gender")]

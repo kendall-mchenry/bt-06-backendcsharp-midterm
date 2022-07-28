@@ -11,7 +11,16 @@
         @foreach (var pet in Model ?? new List<Pet>())
         {
             <p>@pet.PetName</p>
-            <a href="@pet.PetImgUrl"></a>
+            <img src="@pet.PetImgUrl"/>
+
+            <br>
+
+            <a class="btn" asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId">Edit</a>
+            
         }
+    </div>
+
+        <div>
+        <a class="btn" asp-controller="Pet" asp-action="Add">Create New</a>
     </div>
 </div>

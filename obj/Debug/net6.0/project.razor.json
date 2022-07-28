@@ -16348,6 +16348,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/_PetInput.cshtml",
+      "TargetPath": "Views\\Pet\\_PetInput.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Add.cshtml",
       "TargetPath": "Views\\Pet\\Add.cshtml",
       "FileKind": "mvc"

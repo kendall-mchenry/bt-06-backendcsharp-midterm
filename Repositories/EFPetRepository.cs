@@ -50,6 +50,7 @@ public class EFPetRepository : IPetRepository
             originalPet.PetBreed = newPet.PetBreed;
             originalPet.PetAge = newPet.PetAge;
             originalPet.PetGender = newPet.PetGender;
+            _context.SaveChanges();
         }
 
         return originalPet;

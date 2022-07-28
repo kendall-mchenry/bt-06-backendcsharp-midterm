@@ -29,7 +29,8 @@ public class PetController : Controller
     {
         var findPet = _petRepository.GetPetById(petId);
 
-        if (findPet == null) {
+        if (findPet == null)
+        {
             return RedirectToAction("List");
         }
 
@@ -37,16 +38,24 @@ public class PetController : Controller
     }
 
     // GET / view to edit pet by id
-    [HttpGet]
-    public IActionResult Edit(int petId) {
-        return View();
+    public IActionResult Edit(int petId)
+    {
+        var findPet = _petRepository.GetPetById(petId);
+
+        if (findPet == null)
+        {
+            return RedirectToAction("List");
+        }
+
+        return View(findPet);
     }
-    
+
     // POST / UPDATE pet by id
-    [HttpPost]    
+    [HttpPost]
     public IActionResult Edit(Pet editPet)
     {
-        if (!ModelState.IsValid) {
+        if (!ModelState.IsValid)
+        {
             return View();
         }
 
@@ -66,7 +75,8 @@ public class PetController : Controller
     [HttpPost]
     public IActionResult Add(Pet newPet)
     {
-        if (!ModelState.IsValid) {
+        if (!ModelState.IsValid)
+        {
             return View();
         }
 
