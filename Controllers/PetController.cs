@@ -24,10 +24,10 @@ public class PetController : Controller
         return View(_petRepository.GetAllPets());
     }
 
-    // GET / pet by id
-    public IActionResult Detail(int petId)
+    // GET / view for details of pet by id
+    public IActionResult Detail(int id)
     {
-        var findPet = _petRepository.GetPetById(petId);
+        var findPet = _petRepository.GetPetById(id);
 
         if (findPet == null)
         {
@@ -38,9 +38,9 @@ public class PetController : Controller
     }
 
     // GET / view to edit pet by id
-    public IActionResult Edit(int petId)
+    public IActionResult Edit(int id)
     {
-        var findPet = _petRepository.GetPetById(petId);
+        var findPet = _petRepository.GetPetById(id);
 
         if (findPet == null)
         {
@@ -61,7 +61,7 @@ public class PetController : Controller
 
         _petRepository.UpdatePet(editPet);
 
-        return RedirectToAction("List");
+        return RedirectToAction("Detail", new {id = editPet.PetId});
     }
 
     // GET / view to add a new pet
@@ -82,15 +82,13 @@ public class PetController : Controller
 
         _petRepository.CreatePet(newPet);
 
-        return View(newPet);
-        // OR return RedirectToAction("List");
-
+        return RedirectToAction("Detail", new {id = newPet.PetId});
     }
 
     // DELETE / pet by id
-    public IActionResult Delete(int petId)
+    public IActionResult Delete(int id)
     {
-        _petRepository.DeletePetById(petId);
+        _petRepository.DeletePetById(id);
 
         return RedirectToAction("List");
     }

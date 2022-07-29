@@ -16,3 +16,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+.list-wrapper {
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.list-img {
+  width: 100%;
+}

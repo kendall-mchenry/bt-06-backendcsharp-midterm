@@ -36,7 +36,13 @@ public class EFPetRepository : IPetRepository
 
     public Pet? GetPetById(int petId)
     {
-        return _context.Pet.SingleOrDefault(p => p.PetId == petId);
+        var pet = new Pet();
+        try {
+            pet = _context.Pet.SingleOrDefault(p => p.PetId == petId);
+        } catch(Exception ex) {
+            pet = null;
+        }
+        return pet;
     }
 
     public Pet? UpdatePet(Pet newPet)

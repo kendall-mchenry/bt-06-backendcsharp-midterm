@@ -6,10 +6,19 @@
 
 <div>
     <form asp-controller="Pet" asp-action="Add" method="post">
-        
+
         @await Html.PartialAsync("_PetInput", Model)
 
-        <input type="submit" value="Save">
+
+        <div>
+            <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="List">
+                Back
+            </a>
+            
+            <input type="submit" value="Save">
+        </div>
+
+
     </form>
 
 

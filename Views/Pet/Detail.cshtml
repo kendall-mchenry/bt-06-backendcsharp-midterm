@@ -5,5 +5,22 @@
 }
 
 <div>
-<h1></h1>
+    <h1>@Model.PetName</h1>
+    <img src="@Model.PetImgUrl" alt="@Model.PetName, @Model.PetBreed">
+    <p>@Model.PetAge</p>
+    <p>@Model.PetBreed</p>
+    <p>@Model.PetGender</p>
+    <p>@Model.PetDescription</p>
+    <div>
+        <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="List">
+            Back
+        </a>
+        
+        <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="Edit" asp-route-id="@Model.PetId">
+            Edit
+        </a>
+
+    </div>
+
+
 </div>

@@ -4,23 +4,42 @@
     ViewData["Title"] = "Adoptable Pets";
 }
 
-<div>
-    <h1>Kendall & Koda's Dog Adoptions!</h1>
-    <br>
-    <div>
-        @foreach (var pet in Model ?? new List<Pet>())
-        {
-            <p>@pet.PetName</p>
-            <img src="@pet.PetImgUrl"/>
-
-            <br>
-
-            <a class="btn" asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId">Edit</a>
-            
-        }
+<div class="container">
+    <div class="header row">
+        <h1 class="display-4 list-title col-10">Adoptable Dogs</h1>
+        <span class="col-2 d-flex align-items-center justify-content-end"><a class="btn btn-primary" asp-controller="Pet" asp-action="Add">Create New</a></span>
     </div>
+    
 
-        <div>
-        <a class="btn" asp-controller="Pet" asp-action="Add">Create New</a>
-    </div>
+<div class="row">
+ @foreach (var pet in Model ?? new List<Pet>())
+    {
+        <div class="list-wrapper col text-center">
+            <img class="list-img" src="@pet.PetImgUrl" />
+            <h2 class="mt-2">@pet.PetName</h2>
+            <p>@pet.PetBreed | @pet.PetGender | @pet.PetAge Years Old</p>
+            <p>@pet.PetDescription</p>
+
+            <div class="col-12">   
+
+                <a class="btn btn-sm btn-primary mb-3 ml-2"
+                    asp-controller="Pet" asp-action="Detail" asp-route-id="@pet.PetId" >
+                    Details
+                </a>
+
+                <a class="btn btn-sm btn-secondary mb-3 ml-2"
+                    asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId" >
+                    Edit
+                </a>
+
+                <a class="btn btn-sm btn-danger mb-3 ml-2"
+                    asp-controller="Pet" asp-action="Delete" asp-route-id="@pet.PetId" >
+                    Delete
+                </a>
+                
+            </div>
+        </div>
+    }
+</div>
+   
 </div>
