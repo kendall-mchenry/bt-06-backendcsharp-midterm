@@ -25,9 +25,32 @@ body {
 
 .list-wrapper {
   border: 2px solid black;
-  margin: 10px;
 }
 
 .list-img {
+  width: auto;
+  height: auto;
+}
+
+.img-div {
+  height: 300px;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
