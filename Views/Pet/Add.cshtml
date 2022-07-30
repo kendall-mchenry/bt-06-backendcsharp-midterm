@@ -4,22 +4,16 @@
     ViewData["Title"] = "Add New Dog";
 }
 
-<div>
+<div class="form-wrapper">
     <form asp-controller="Pet" asp-action="Add" method="post">
+    <h1 class="display-4 list-title col-12 text-center">Add New Pet</h1>
 
         @await Html.PartialAsync("_PetInput", Model)
 
-
-        <div>
-            <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="List">
-                Back
-            </a>
-            
-            <input type="submit" value="Save">
-        </div>
-
+        <input type="submit" class="btn btn-sm btn-primary float-end" value="Save">
 
     </form>
 
+<a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="List">Back</a>
 
 </div>

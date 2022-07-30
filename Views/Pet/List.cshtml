@@ -11,33 +11,36 @@
     </div>
     
 
-    <div class="row g-4">
+    <div class="list-card mt-2 row g-4">
     @foreach (var pet in Model ?? new List<Pet>())
         {
             <div class="list-wrapper col-4 text-center">
                 <div class="img-div box col-12">
                     <img src="@pet.PetImgUrl" alt="@pet.PetName, @pet.PetBreed"/>
                 </div>
-                <h2 class="mt-2">@pet.PetName</h2>
-                <p>@pet.PetBreed | @pet.PetGender | @pet.PetAge Years Old</p>
-                <p>@pet.PetDescription</p>
+                <div class="text-div">
+                    <h2 class="mt-2">@pet.PetName</h2>
+                    @* <p>@pet.PetBreed | @pet.PetGender | @pet.PetAge Years Old</p>
+                    <p>@pet.PetDescription</p> *@
 
-                <div class="col-12">   
+                    <div class="col-12 ">   
 
-                    <a class="btn btn-sm btn-primary mb-3 ml-2"
-                        asp-controller="Pet" asp-action="Detail" asp-route-id="@pet.PetId" >
-                        Details
-                    </a>
+                        <a class="btn btn-sm btn-primary mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Detail" asp-route-id="@pet.PetId" >
+                            Details
+                        </a>
 
-                    <a class="btn btn-sm btn-secondary mb-3 ml-2"
-                        asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId" >
-                        Edit
-                    </a>
+                        <a class="btn btn-sm btn-secondary mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId" >
+                            Edit
+                        </a>
 
-                    <a class="btn btn-sm btn-danger mb-3 ml-2"
-                        asp-controller="Pet" asp-action="Delete" asp-route-id="@pet.PetId" >
-                        Delete
-                    </a>
+                        <a class="btn btn-sm btn-danger mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Delete" asp-route-id="@pet.PetId" >
+                            Delete
+                        </a>
+                    </div>
+                
                     
                 </div>
             </div>

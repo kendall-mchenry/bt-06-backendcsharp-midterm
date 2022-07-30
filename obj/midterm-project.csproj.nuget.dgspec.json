@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {}
+    "/Users/kendallmchenry/Desktop/midterm-project/midterm-project.csproj": {}
   },
   "projects": {
-    "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {
+    "/Users/kendallmchenry/Desktop/midterm-project/midterm-project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
+        "projectUniqueName": "/Users/kendallmchenry/Desktop/midterm-project/midterm-project.csproj",
         "projectName": "midterm-project",
-        "projectPath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
-        "packagesPath": "/Users/kendall.mchenry/.nuget/packages/",
-        "outputPath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/obj/",
+        "projectPath": "/Users/kendallmchenry/Desktop/midterm-project/midterm-project.csproj",
+        "packagesPath": "/Users/kendallmchenry/.nuget/packages/",
+        "outputPath": "/Users/kendallmchenry/Desktop/midterm-project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kendall.mchenry/.nuget/NuGet/NuGet.Config"
+          "/Users/kendallmchenry/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

@@ -4,25 +4,27 @@
     ViewData["Title"] = "Edit Pet Details";
 }
 
-<div>
+<div class="form-wrapper">
     <form asp-controller="Pet" asp-action="Edit" method="post">
-        <h1>Edit Pet Details</h1>
+        <h1 class="display-4 list-title col-12 text-center">Edit Pet Details</h1>
 
         @await Html.PartialAsync("_PetInput", Model)
 
         <input type="hidden" asp-for="PetId" />
 
-        <div>
-            <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="List">
-                Back
-            </a>
+        <div class="submit-wrapper">
+        
+            <input type="submit" class="btn btn-sm btn-primary float-end" value="Save">
 
-            <a class="btn btn-sm btn-light mb-3" asp-controller="Pet" asp-action="Delete" asp-route-id="@Model.PetId">
-                Delete
-            </a>
-
-            <input type="submit" class="btn" value="Save">
         </div>
 
     </form>
+
+    <a class="btn btn-sm btn-light" asp-controller="Pet" asp-action="List">
+                Back
+            </a>
+
+            <a class="btn btn-sm btn-danger" asp-controller="Pet" asp-action="Delete" asp-route-id="@Model.PetId">
+                Delete
+            </a>
 </div>
