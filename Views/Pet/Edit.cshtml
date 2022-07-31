@@ -20,11 +20,7 @@
 
     </form>
 
-    <a class="btn btn-sm btn-light" asp-controller="Pet" asp-action="List">
-                Back
-            </a>
+    <a class="btn btn-sm btn-light" asp-controller="Pet" asp-action="List">Back</a>
 
-            <a class="btn btn-sm btn-danger" asp-controller="Pet" asp-action="Delete" asp-route-id="@Model.PetId">
-                Delete
-            </a>
+    <a class="btn btn-sm btn-danger" asp-controller="Pet" asp-action="Delete" asp-route-id="@Model?.PetId">Delete</a>
 </div>
