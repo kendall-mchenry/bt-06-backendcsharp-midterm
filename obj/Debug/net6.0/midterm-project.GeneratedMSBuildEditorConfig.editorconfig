@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = midterm_project
 build_property.RootNamespace = midterm_project
-build_property.ProjectDir = /Users/kendallmchenry/Desktop/midterm-project/
+build_property.ProjectDir = /Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/kendallmchenry/Desktop/midterm-project
+build_property.MSBuildProjectDirectory = /Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Home/Index.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Home/Privacy.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Pet/Add.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Pet/Detail.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L0RldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Pet/Edit.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Pet/List.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Pet/_PetInput.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Pet/_PetInput.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L19QZXRJbnB1dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Shared/Error.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/_ViewImports.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/_ViewStart.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kendallmchenry/Desktop/midterm-project/Views/Shared/_Layout.cshtml]
+[/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kn67ofeeto
