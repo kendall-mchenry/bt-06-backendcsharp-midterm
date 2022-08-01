@@ -1,0 +1,55 @@
+@model midterm_project.Models.Pet
+
+<div class="form-group">
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetName"></label>
+        <input class="form-control col-8 form-input" asp-for="PetName" />
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetName"></span>
+        </div>
+        
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetImgUrl"></label>
+        <input class="form-control col-8 form-input" asp-for="PetImgUrl" />
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetImgUrl"></span>
+        </div>
+    </div>
+   
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetDescription"></label>  
+        <textarea class="form-control col-8 form-input" asp-for="PetDescription"> </textarea>
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetDescription"></span>
+        </div>    
+    </div>
+    
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetBreed"></label>
+        <input class="form-control col-8 form-input" asp-for="PetBreed" />
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetBreed"></span>
+        </div> 
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetAge"></label>
+        <input class="form-control col-8 form-input" asp-for="PetAge" />
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetAge"></span>
+        </div> 
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-4" asp-for="PetGender"></label>
+        <select asp-for="PetGender" class="form-control col-8 form-input" asp-items="Html.GetEnumSelectList<Gender>()">
+            <option>Select Gender</option>
+        </select>
+        <div class="col-12 text-danger d-flex justify-content-end">
+            <span asp-validation-for="PetGender"></span>
+        </div> 
+    </div>
+
+</div>

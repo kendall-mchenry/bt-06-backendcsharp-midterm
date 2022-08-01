@@ -1,0 +1,50 @@
+@model IEnumerable<midterm_project.Models.Pet>
+
+@{
+    ViewData["Title"] = "Adoptable Pets";
+}
+
+<div class="container">
+    <div class="header row">
+        <h1 class="display-4 list-title col-10">Adoptable Dogs</h1>
+        <span class="col-2 d-flex align-items-center justify-content-end"><a class="btn btn-primary" asp-controller="Pet" asp-action="Add">Create New</a></span>
+    </div>
+    
+
+    <div class="list-card mt-2 row g-4">
+    @foreach (var pet in Model ?? new List<Pet>())
+        {
+            <div class="list-wrapper col-4 text-center">
+                <div class="img-div box col-12">
+                    <img src="@pet.PetImgUrl" alt="@pet.PetName, @pet.PetBreed"/>
+                </div>
+                <div class="text-div">
+                    <h2 class="mt-2">@pet.PetName</h2>
+                    @* <p>@pet.PetBreed | @pet.PetGender | @pet.PetAge Years Old</p>
+                    <p>@pet.PetDescription</p> *@
+
+                    <div class="col-12 ">   
+
+                        <a class="btn btn-sm btn-primary mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Detail" asp-route-id="@pet.PetId" >
+                            Details
+                        </a>
+
+                        <a class="btn btn-sm btn-secondary mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Edit" asp-route-id="@pet.PetId" >
+                            Edit
+                        </a>
+
+                        <a class="btn btn-sm btn-danger mb-3 ml-2"
+                            asp-controller="Pet" asp-action="Delete" asp-route-id="@pet.PetId" >
+                            Delete
+                        </a>
+                    </div>
+                
+                    
+                </div>
+            </div>
+        }
+    </div>
+   
+</div>

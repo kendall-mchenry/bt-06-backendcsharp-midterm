@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {}
+    "/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {}
   },
   "projects": {
-    "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {
+    "/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
+        "projectUniqueName": "/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
         "projectName": "midterm-project",
-        "projectPath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
+        "projectPath": "/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/midterm-project.csproj",
         "packagesPath": "/Users/kendall.mchenry/.nuget/packages/",
-        "outputPath": "/Users/kendall.mchenry/Desktop/Bethel-Tech/06-backend-dotnet/midterm-project/obj/",
+        "outputPath": "/Users/kendall.mchenry/Library/CloudStorage/OneDrive-RamseySolutions/Bethel-Tech/06-backend-dotnet/midterm-project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kendall.mchenry/.nuget/NuGet/NuGet.Config"

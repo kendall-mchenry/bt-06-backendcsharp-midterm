@@ -1,7 +1,16 @@
+using midterm_project.Migrations;
+using midterm_project.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Dependency injection for PetDbContext & SQLite
+builder.Services.AddSqlite<PetDbContext>("Data Source=MidtermPets.db");
+
+// Dependency injection for EFPetRepository as extension of IPetRepository
+builder.Services.AddScoped<IPetRepository, EFPetRepository>();
 
 var app = builder.Build();
 
